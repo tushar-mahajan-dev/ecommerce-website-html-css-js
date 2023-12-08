@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Reset some default styles */
+    body, h1, ul, li, p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Header styles */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    /* Cart items list styles */
+    .cart-items {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #cart-items-list {
+        list-style: none;
+    }
+    
+    #cart-items-list li {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #cart-items-list li img {
+        max-width: 100px;
+        height: auto;
+    }
+    
+    #cart-total {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+    
+    <div class="cart-items">
+        <ul id="cart-items-list">
+            <!-- Cart items will be displayed here using JavaScript -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <div id="cart-controls">
+            <button id="update-cart">Update Cart</button>
+            <a href="index.html">Continue Shopping</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+    </div>
+
+    <script src="cart-script.js"></script>
+</body>
+</html>

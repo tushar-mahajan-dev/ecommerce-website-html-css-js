@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Reset some default styles */
+        body, h1, form, label, input {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        /* Checkout form styles */
+        .checkout-form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .checkout-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .checkout-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    
+    <div class="checkout-form">
+        <h2>Shipping Information</h2>
+        <form id="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" >
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" >
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" >
+
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area" >
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" >
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" >            
+            <h2>Payment Information</h2>
+            
+            <label for="credit-card">Name:</label>
+            <input type="text" id="credit-card" name="credit-card" >
+            
+            <label for="expiration">Expiration Date:</label>
+            <input type="text" id="expiration" name="expiration" >
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" >
+            
+            <a href="thanks.html">Thanks</a>
+        </form>
+    </div>
+</body>
+</html>
